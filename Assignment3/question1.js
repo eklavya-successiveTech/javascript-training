@@ -1,18 +1,18 @@
 //1. Write a program to perform functionality of a calculator (add,sub,multiply,divide)
-const sum =(a,b) =>{
-    return a+b;
+const sum =(num1,num2) =>{
+    return num1+num2;
 }
 
-const sub =(a,b) =>{
-    return a-b;
+const sub =(num1,num2) =>{
+    return num1-num2;
 }
 
-const multiply =(a,b) =>{
-    return a*b;
+const multiply =(num1,num2) =>{
+    return num1*num2;
 }
 
-const divide =(a,b) =>{
-    return a/b;
+const divide =(num1,num2) =>{
+    return num1/num2;
 }
 
 console.log("Sum: " + sum(2, 4));       

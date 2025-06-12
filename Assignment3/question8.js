@@ -4,15 +4,15 @@ for(let i=1; i<=20; i++){ // for loop
     console.log(i);
 }
 
-let x = 1;// while loop
-while(x<=20){
-    console.log(x);
-    x++;
+let num1 = 1;// while loop
+while(num1 <= 20){
+    console.log(num1);
+    num1++;
 }
 
 // do while loop
-let y = 1;
+let num2= 1;
 do{
-    console.log(y);
-    y++;
-}while(y<21)
+    console.log(num2);
+    num2++;
+}while(num2 <21)

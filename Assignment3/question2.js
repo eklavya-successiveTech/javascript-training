@@ -22,16 +22,16 @@
 
 const firstPattern = ()=>{
      let rows = 4;
-     let x = 1;
+     let element = 1;
     let pattern = "";      
     for (let i = 1; i <= rows; i++){    
         for (let j = 1; j <= i; j++){      
-            pattern += x + " ";  
-            x++;
+            pattern += element + " ";  
+            element++;
         }
         pattern += "\n";    
     }
-    console.log(pattern);
+    return pattern;
 }
 
 
@@ -44,7 +44,7 @@ const secondPattern = ()=>{
         }
         pattern += "\n";    
     }
-    console.log(pattern);  
+    return pattern; 
 }
 
 
@@ -62,9 +62,9 @@ const thirdPattern = ()=>{
         }
         pattern += "\n";
     }
-    console.log(pattern);  
+    return pattern; 
 }
 
-firstPattern();
-secondPattern();
-thirdPattern();
+console.log(firstPattern());
+console.log(secondPattern());
+console.log(thirdPattern());
