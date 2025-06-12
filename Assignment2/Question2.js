@@ -3,19 +3,20 @@
 const readline = require('readline');
 
 function getDetails() {
-  const rl = readline.createInterface({
+  const inputPrompt = readline.createInterface({
     input: process.stdin,
     output: process.stdout
   });
 
-  rl.question("Enter your name: ", function(name) {
-    rl.question("Enter your age: ", function(age) {
-      rl.question("Enter your phone number: ", function(phone) {
+  inputPrompt.question("Enter your name: ", function(name) {
+    inputPrompt.question("Enter your age: ", function(age) {
+      inputPrompt.question("Enter your phone number: ", function(phone) {
         console.log(`Name: ${name}, Age: ${age}, Phone No: ${phone}`);
-        rl.close();
+        inputPrompt.close();
       });
     });
   });
 }
+
 
 getDetails();

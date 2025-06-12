@@ -12,31 +12,27 @@ function func2(){
 
 // 4th question using arrow function
 
-const sqr = (a) =>{
-    console.log(a*a);
-    return a*a;
+const sqr = (num) =>{
+    return num*num;
 }
-sqr(2);
+console.log(sqr(2));
 
 // 5th question using arrow function
 
-const sum = (a,b) =>{
-    console.log(a+b);
-    return a+b;
+const sum = (num1,num2) =>{
+    return num1+num2;
 }
-sum(1,2);
+console.log(sum(1,2));
 
 // 6th question using arrow function
 
-const check = (a) =>{
-    if(a % 2 == 0){
-        console.log(true);
+const check = (num) =>{
+    if(num % 2 == 0){
         return true;
     }
     else{
-        console.log(false);
         return false;
     }
 }
-check(3);
-check(2);
+console.log(check(3));
+console.log(check(6));
