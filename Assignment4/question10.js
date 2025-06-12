@@ -5,7 +5,7 @@ const result = [];
 
 const concatenate = (arr)=>{
     for(let i = 0; i < arr.length; i++){
-        if(/*typeof(arr[i]) == "object"*/ Array.isArray(arr[i])){
+        if(Array.isArray(arr[i])){
             concatenate(arr[i]);
         }
         else{
@@ -15,4 +15,4 @@ const concatenate = (arr)=>{
     return result;
     
 }
-console.log(concatenate(arr1));
+console.log(concatenate(arr));
