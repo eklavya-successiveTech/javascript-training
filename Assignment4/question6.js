@@ -1,11 +1,6 @@
-//6. Write a program to find sum of an array
+//6. Write a program to find sum of an array using reduce method
 
-const sum = (arr)=>{
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i];
-    }
-    return sum;
-}
 const arr = [1,2,3,4,5,6];
-console.log(sum(arr));
+
+const Total = arr.reduce( (previousValue, currentValue)=> previousValue + currentValue, 0);
+console.log(Total);

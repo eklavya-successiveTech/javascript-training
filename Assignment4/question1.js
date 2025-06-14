@@ -13,4 +13,4 @@ function removeDupes(str){
     return newStr;
 }
 
-removeDupes("Hello Yellow")
+removeDupes("Hello Yellow");
