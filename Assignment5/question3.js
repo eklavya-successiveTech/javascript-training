@@ -6,7 +6,6 @@ const people = [
   { name: "Bob", age: 25, id: 3 }
 ];
 
-for(let i = 0; i < people.length; i++){
-  delete people[i].id;
-}
-console.log(people)
+const updatedPeople = people.map(({ id, ...rest }) => rest);
+
+console.log(updatedPeople);

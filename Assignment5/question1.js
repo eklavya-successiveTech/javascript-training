@@ -6,6 +6,6 @@ const employee = {
     home : "Udhampur"
 }
 
-for( let element in employee){
-    console.log(element + " : " + employee[element])
-}
+Object.keys(employee).forEach(key => {
+    console.log(`${key} : ${employee[key]}`);
+});
