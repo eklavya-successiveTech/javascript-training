@@ -21,4 +21,3 @@ React is a JavaScript library for building user interfaces. It is used to build 
   Data in React flows in a single direction, from parent to child components. This makes it easier to understand how data is being used and tracked throughout
   the application, leading to better control over state and easier debugging.
 
-
