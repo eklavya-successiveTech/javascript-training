@@ -13,7 +13,14 @@ const p3 = new Promise((resolve)=>{
 })
 
 async function multiAsyncOperations(p1,p2,p3) {
-    const result = await Promise.all([p1,p2,p3]);
-    return result;
+    const r1Promise = p1;
+    const r2Promise = p2;
+    const r3Promise = p3;
+    
+    const r1 = await r1Promise;
+    const r2 = await r2Promise;
+    const r3 = await r3Promise;
+    
+    return [r1,r2,r3]
 } 
 multiAsyncOperations(p1,p2,p3).then((data)=> console.log(data));
