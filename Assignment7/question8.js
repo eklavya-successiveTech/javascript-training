@@ -4,16 +4,22 @@ const url1 = 'https://api.sampleapis.com/coffee/hot';
 const url2 = 'https://api.sampleapis.com/futurama/info';
 const url3 = 'https://api.sampleapis.com/switch/games';
 
-async function operationOnAPI (){
-    const responses = await Promise.all([
-  fetch(url1),
-  fetch(url2),
-  fetch(url3)
-]);
 
-const dataArrays = await Promise.all(
-  responses.map(response => response.json())
-);
-    return dataArrays;
+async function operationOnAPI1 (){
+    const response = await fetch(url1);
+    return response
+};
+async function operationOnAPI2 (){
+    const response = await fetch(url2);
+    return response;
+};
+async function operationOnAPI3 (){
+    const response = await fetch(url3);
+    return response;
+};
+
+function operation (){
+  const data = Promise.all([operationOnAPI1(),operationOnAPI2(),operationOnAPI3()]);
+  return data;
 }
-operationOnAPI().then(data => console.log( data))
+operation().then(data => console.log( data))
